@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container1">
+        <div class="section2">
+            <div class="section2_firts">
+                <div class="section2_icon">
+                    <img src="img/Frame 32.png" alt="">
+                </div>
+                <div class="section2_text">
+                     <p>Send Assets</p>
+    
+                </div>
+
+            </div>
+           
+            <div class="section_form">
+                <label>From</label>
+                <input type="text" class="text1" name="from" id="" placeholder="My Wallet (7300...3334)"> <br>
+                <label>To</label>
+                <input type="text" name="from" id="" placeholder=""> <br>
+                <label>Asset</label>
+                <input type="text" name="text2" id="" placeholder="EUR"> 
+              
+                <br>
+                <div class="section_texg_form">
+                    <label>Amount </label>
+                    <label>available: 50 EUR</label>
+                    
+                </div>
+                <input type="text" name="from" id="" placeholder="My Wallet (7300...3334)"> 
+                
+                
+
+            </div>
+            <div class="section_button">
+                <div class="section_button_left">
+                    <input type="button" value="Cancel">
+                
+                </div>
+                <div class="section_button_right">
+                    <input onclick="popup_chuyentien()" type="button" value="Send">
+                   
+                </div>
+
+            </div>
+        </div>
+        <div id="my_popup" class="popup">
+            <div class="popuptext">
+                <h2>Successfully sent</h2>
+                <p>Your EUR has been sent!<br>
+                    Thank you for using our service</p>
+    
+            </div>
+        </div>
+        <div class="overlay">
+            
+        </div>
+    </div>
+   
+   
+
+    <script>
+       
+        function popup_chuyentien() {
+          var popup = document.getElementById("my_popup");
+          popup.classList.toggle("show");
+        }
+        </script>
+        
+</body>
+</html>
