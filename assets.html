@@ -12,7 +12,7 @@
 
     <div class="container1">
         <div class="section2">
-            <div class="overlay">
+            <div class="overlay" id="overlay_id" onclick="tat_popup()">
             
             </div>
             <div class="section2_firts">
@@ -73,9 +73,18 @@
     <script>
        
         function popup_chuyentien() {
-          var popup = document.getElementById("my_popup");
+          let popup = document.getElementById("my_popup");
           popup.classList.toggle("show");
+          let overlay = document.getElementById("overlay_id")
+          overlay.classList.add("show");
         }
+        function tat_popup(){
+            let popup = document.getElementById("my_popup")
+          popup.classList.remove("show");
+          let overlay = document.getElementById("overlay_id")
+          overlay.classList.remove("show");
+        }
+
         </script>
         
 </body>
